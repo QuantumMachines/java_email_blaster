@@ -66,12 +66,7 @@ public class Dashboard extends JFrame{
         uploadCSV = new JButton("Upload CSV");
 
 
-         /*
-        JScrollPane scrollbar = new JScrollPane(text);
-        scrollbar.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-        scrollbar.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollbar.setBounds(50, 30, 300, 50);
-        */
+
 
         // adding textfiekd
         p.add(uploadCSV);
@@ -80,18 +75,12 @@ public class Dashboard extends JFrame{
         p.add(pass);
         p.add(subject);
         p.add(dLimit); 
-        
-       // button 
-        //p.add(send);
 
-        // adding text area 
       
         
         
         textP.add(text);
-        //textP.add(scrollbar);
-
-        // adding send and attach button
+ 
         buttonP.add(fileDisplay);
         buttonP.add(attach);
         buttonP.add(send);
@@ -103,8 +92,8 @@ public class Dashboard extends JFrame{
         attach.addActionListener(new AttachListener());
         uploadCSV.addActionListener(new CSVListener());
 
-		setSize(600, 600);
-		//setResizable(false);
+	setSize(600, 600);
+	//setResizable(false);
     	setVisible(true);
     	setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
